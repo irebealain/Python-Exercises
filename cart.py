@@ -36,8 +36,13 @@ def search_cart(fruits):
         print(f" The {fruits} has been found")
     else:
         print("The fruit is not in the cart")
-def calculate_total_price(items):
-    shopping_dict.values()
+
+
+def calculate_total_price():
+    total_price = sum(shopping_dict.values())
+    print(f"The total price is: {total_price}")
+
+
 # Looping through options.
 while True:
     print("What would you like to do?")
@@ -58,7 +63,7 @@ while True:
         fruit = input("Enter a fruit: ")
         search_cart(fruit)
     elif choice == "4":
-        total_price()
+        calculate_total_price()
         print("Thank you!")
     else:
         print("Invalid input")
